@@ -10,5 +10,10 @@ pipeline {
                  sh 'mvn -B -DskipTests clean package'
             }
         }
+        stage('Deploy') {
+            steps {
+                 print 'Hello Jenkins'
+            }
+        }
     }
 }
